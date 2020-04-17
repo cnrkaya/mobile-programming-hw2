@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:padding="5dp"
+    android:background="#2874A6">
+
+    <LinearLayout
+
+        android:padding="5dp"
+        android:background="#2874A6"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:background="#83c0e9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/username"
+                android:text="Kullanıcı Adı"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+        </LinearLayout>
+
+        <RadioGroup
+
+            android:background="#cee6f6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="Cisiyet">
+
+            </TextView>
+            <RadioButton
+                android:id="@+id/man"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Erkek">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/woman"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Kadın">
+            </RadioButton>
+        </RadioGroup>
+
+        <LinearLayout
+            android:background="#aed6f1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Boy">
+
+            </TextView>
+
+            <SeekBar
+
+                android:id="@+id/height_seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:min="10"
+                android:max="220"
+                android:layout_weight="1">
+
+            </SeekBar>
+            <TextView
+                android:id="@+id/heightText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="150"
+                android:gravity="center"
+                android:layout_weight="1.5">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#cee6f6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Kilo">
+
+            </TextView>
+
+            <SeekBar
+
+                android:id="@+id/weight_seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:min="10"
+                android:max="250"
+                android:layout_weight="1">
+
+            </SeekBar>
+            <TextView
+                android:id="@+id/weightText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="150"
+                android:gravity="center"
+                android:layout_weight="1.5">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="#aed6f1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Yaş">
+
+            </TextView>
+
+            <SeekBar
+
+                android:id="@+id/age_seekBar"
+                style="@style/Widget.AppCompat.SeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:min="1"
+                android:max="140"
+                android:layout_weight="1">
+
+            </SeekBar>
+            <TextView
+                android:id="@+id/ageText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="150"
+                android:gravity="center"
+                android:layout_weight="1.5">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="#cee6f6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Uygulama Modu">
+
+            </TextView>
+
+            <Switch
+                android:id="@+id/mode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                >
+
+            </Switch>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:background="#83c0e9"
+            android:layout_weight="1"
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Güncelle">
+
+        </Button>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1aec2"
+    android:paddingVertical="30dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#f1aec2">
+        <LinearLayout
+            android:padding="20dp"
+            android:background="#aed6f1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Notlarım">
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:background="@drawable/delete">
+            </ImageButton>
+        </LinearLayout>
+
+
+        <EditText
+            android:background="#f1e7ae"
+            android:gravity="top"
+            android:id="@+id/noteField"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginHorizontal="15dp"
+        android:background="#aed6f1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/update"
+        android:layout_weight="7"
+        android:text="Kaydet">
+
+    </Button>
+
+
+</LinearLayout>
