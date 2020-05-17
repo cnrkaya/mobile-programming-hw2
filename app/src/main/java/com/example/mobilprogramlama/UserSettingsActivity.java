@@ -32,6 +32,7 @@ public class UserSettingsActivity extends AppCompatActivity implements SeekBar.O
         setContentView(R.layout.activity_user_settings);
 
         currentUserName= getIntent().getStringExtra("userId");
+        defineVariables();
         getSharedPreferences();
         setListeners();
 
