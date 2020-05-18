@@ -79,7 +79,34 @@
 
                 </TextView>
             </LinearLayout>
+            <LinearLayout
 
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#AED6F1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/download"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:background="@drawable/multimedia">
+                </ImageButton>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#D6EAF8"
+                    android:text="Dosya İndirme"
+                    android:textAlignment="center"
+                    android:textColor="#000000">
+
+                </TextView>
+            </LinearLayout>
             <LinearLayout
 
                 android:layout_margin="10dp"
@@ -152,7 +179,6 @@
 
                 </TextView>
             </LinearLayout>
-
             <LinearLayout
 
                 android:layout_margin="10dp"
@@ -175,6 +201,34 @@
                     android:layout_height="match_parent"
                     android:background="#D6EAF8"
                     android:text="Sensör Listesi"
+                    android:textAlignment="center"
+                    android:textColor="#000000">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#AED6F1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:background="@drawable/location">
+                </ImageButton>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#D6EAF8"
+                    android:text="Lokasyon Gönder"
                     android:textAlignment="center"
                     android:textColor="#000000">
 

@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener{
-private ImageButton sensors,users,notes,settings,logout,email;
+private ImageButton sensors,users,notes,settings,logout,email,location,download;
 private String currentUserName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,11 +50,21 @@ private String currentUserName;
                 intent = new Intent(v.getContext(),MailActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.location:
+                //TODO
+                intent = new Intent(v.getContext(),LocationActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.download:
+                intent = new Intent(v.getContext(),DownloadActivity.class);
+                startActivity(intent);
+                break;
             case R.id.logout:
                 intent = new Intent(v.getContext(),MainActivity.class);
                 finish();
                 startActivity(intent);
                 break;
+
 
             default:
                 break;
@@ -69,6 +79,8 @@ private String currentUserName;
         settings = (ImageButton) findViewById(R.id.settings);
         logout = (ImageButton) findViewById(R.id.logout);
         email = (ImageButton) findViewById(R.id.email);
+        location=(ImageButton) findViewById(R.id.location);
+        download =(ImageButton) findViewById(R.id.download);
     }
     public void defineListeners(){
         sensors.setOnClickListener(this);
@@ -77,5 +89,7 @@ private String currentUserName;
         settings.setOnClickListener(this);
         logout.setOnClickListener(this);
         email.setOnClickListener(this);
+        location.setOnClickListener(this);
+        download.setOnClickListener(this);
     }
 }

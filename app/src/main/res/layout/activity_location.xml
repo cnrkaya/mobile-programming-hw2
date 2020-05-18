@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity">
+
+    <Button
+        android:id="@+id/btn_showLocation"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lokasyon Bilgisini Göster"
+        android:textSize="15sp"/>
+    <TextView
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:textSize="1sp"
+        android:id="@+id/infos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bir şeyler ters gitti :/" />
+    <Button
+        android:id="@+id/btn_sendLocation"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lokasyon Bilgisini Gönder"
+        android:textSize="15sp"/>
+
+</LinearLayout>
